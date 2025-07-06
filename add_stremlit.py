@@ -8,7 +8,9 @@ import re
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Replace with your API Key
-API_KEY = "AIzaSyCOflS9nWP8OJxVHAVn1z8aeMUqJBNHDRw"
+import os
+API_KEY = os.getenv("GOOGLE_API_KEY")
+
 
 # US State code to full name mapping
 US_STATE_NAMES = {
